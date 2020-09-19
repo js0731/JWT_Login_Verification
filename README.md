@@ -1,3 +1,4 @@
+
 ## step 1 初使化環境
 
 `mkdir project`
@@ -253,8 +254,8 @@ router.post('/register', (req, res) => {
 module.exports = router
 ```
  <font color=#FF6600>**postman測試**</font>
-![postman測試register路由0.png](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/postman%E6%B8%AC%E8%A9%A6register%E8%B7%AF%E7%94%B101.png?raw=true)
-
+ 
+![01_postman測試註冊路由.png](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/01_postman%E6%B8%AC%E8%A9%A6%E8%A8%BB%E5%86%8A%E8%B7%AF%E7%94%B1.png?raw=true)
 
 ## step 6 建立使用者登入"/login"路由、使用 jwt 驗證機制
 
@@ -321,7 +322,8 @@ router.post('/login', (req,res) => {
 module.exports = router
 ```
  <font color=#FF6600>**postman測試**</font>
-![postman測試login路由02.PNG](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/postman%E6%B8%AC%E8%A9%A6login%E8%B7%AF%E7%94%B102.PNG?raw=true)
+ 
+![02_postman測試登入路由.PNG](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/02_postman%E6%B8%AC%E8%A9%A6%E7%99%BB%E5%85%A5%E8%B7%AF%E7%94%B1.PNG?raw=true)
 
 #### step 2 使用 jwt 獲取 token 
 
@@ -415,8 +417,8 @@ SECRET = 'seccret'
 ```
 
  <font color=#FF6600>**postman測試**</font>
-![jwtToken登入測試03.PNG](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/jwtToken%E7%99%BB%E5%85%A5%E6%B8%AC%E8%A9%A603.PNG?raw=true)
-
+ 
+![03_postman測試登入路由獲取token.PNG](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/03_postman%E6%B8%AC%E8%A9%A6%E7%99%BB%E5%85%A5%E8%B7%AF%E7%94%B1%E7%8D%B2%E5%8F%96token.PNG?raw=true)
 
 
 ## step 7 使用 passport 套件驗證 token 
@@ -579,7 +581,7 @@ module.exports = router
 ```
  <font color=#FF6600>**postman測試**</font>
  
- ![postman測試information.PNG](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/postman%E6%B8%AC%E8%A9%A6information.PNG?raw=true)
+![04_postman測試路由帶入token驗證.PNG](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/04_postman%E6%B8%AC%E8%A9%A6%E8%B7%AF%E7%94%B1%E5%B8%B6%E5%85%A5token%E9%A9%97%E8%AD%89.PNG?raw=true)
 
 
 
@@ -1492,8 +1494,8 @@ methods: {
 ```
  <font color=#FF6600>**點擊api驗證成功**</font>
  
-![驗證成功06.PNG](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/%E9%A9%97%E8%AD%89%E6%88%90%E5%8A%9F06.PNG?raw=true)
+![05_前端測試按鈕驗證通過.PNG](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/05_%E5%89%8D%E7%AB%AF%E6%B8%AC%E8%A9%A6%E6%8C%89%E9%88%95%E9%A9%97%E8%AD%89%E9%80%9A%E9%81%8E.PNG?raw=true)
 
  <font color=#FF6600>**修改token 點擊api驗證失敗 跳回/login**</font>
  
-![驗證失敗07.PNG](https://github.com/js0731/img/blob/master/%E5%9C%96%E7%89%87/%E9%A9%97%E8%AD%89%E5%A4%B1%E6%95%9707.PNG?raw=true)
+![06_前端測試按鈕驗證失敗.PNG](https://github.com/js0731/JWT_Login_Verification/blob/master/record_img/06_%E5%89%8D%E7%AB%AF%E6%B8%AC%E8%A9%A6%E6%8C%89%E9%88%95%E9%A9%97%E8%AD%89%E5%A4%B1%E6%95%97.PNG?raw=true)
