@@ -2,8 +2,11 @@
 ## step 1 初使化環境
 
 `mkdir project`
+
 `cd porject`
+
 `npm init`  ( entry point : server.js )
+
 project / `touch server.js`
 
 
